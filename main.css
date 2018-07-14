@@ -1,0 +1,11 @@
+h1 {
+    display: block;
+    margin-top: 30px;
+}
+.logo {
+    height: 180px;
+    position: absolute;
+    margin-top: -76px;
+    margin-left: -20px;
+    z-index: -1;
+}
