@@ -27,7 +27,8 @@ function displayThumbnails(AJAXdata) {
     let results = AJAXdata.items.map(function (item) {
         return renderResults(item);
     });
-    $('.js-search-results').html(results);
+    $(".js-search-results").attr('hidden',false);
+    $('.js-search-results').html(`<h2>Total Results: ${AJAXdata.pageInfo.totalResults}</h2>${results.join("")}`);
 }
 
 function watchSubmit() {
@@ -42,6 +43,10 @@ function watchSubmit() {
     });
 }
 $(watchSubmit);
+
+
+
+
 
 
 
